@@ -1,11 +1,24 @@
 <html>
   <link rel="stylesheet" href="./styles.css" type="text/css"/>
-  <header>About this page</header>
+  <header>The Beginning ...</header>
   <h1>What this is about</h1>
   <p>Just trying out Github Pages with a simple static publication flow.</p>
   <p>And also playing around with HTML5 and CSS</p>
   <p>Does editing in vi in the Codepsaces terminal work? How does it sync with the VS Code editor?</p>
   <p>Works. It syncs immediately when the file is saved. Quite nice.</p>
   <p>How to preview stuff in Codespaces?</p>
+  <p>Well, that's easy. Just start a server like browser-sync. The environment will notice
+    that the server tries to open a port, creates a port forwarding and instructs the browser
+    to load content. Note that this is technially a proxy setup, not a port forwarding. Not clear
+    whether it works for anything but HTTP and HTTPS.
+  </p>
+  <p>Let's find out by tring to run netcat. But: This is (like dig) not installed by default.</p>
+  <p>Installing stuff with apt on code spaces works like this:
+    <pre>
+      sudo apt update # This is essential
+      sudo apt install netcat
+    </pre>
+  </p>
+  <p>Forwarding a plain TCP port does not seem to work, At least I can not make it work.</p>
   <footer>The END ...</footer>
 </html>
